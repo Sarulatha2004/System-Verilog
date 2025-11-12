@@ -1,4 +1,4 @@
-module red;
+module array_reduction;
   int A[]='{5,3,6,7,8};
   int Res;
   initial begin
@@ -16,3 +16,4 @@ module red;
     
   end
 endmodule
+  
