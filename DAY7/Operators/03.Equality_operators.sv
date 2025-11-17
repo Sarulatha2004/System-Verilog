@@ -31,5 +31,18 @@ module equality_op;
     $display("i1='hxf i2='hxf :i1 === i2 =boolean %0d",i1===i2);
     $display("i1='hxf i2='hxf :i1 !== i2 =boolean %0d",i1!==i2);
     
+    i1='h5f; i2='h5x;
+
+    $display("------Wildcard equality------");
+    $display("i1=%0b i2=%0b :i1 ==? i2 =boolean %0b",i1,i2,i1==?i2);
+    $display("i1=%0b i2=%0b :i1 !=? i2 =boolean %0b",i1,i2,i1!=?i2);
+
+      i1='hff; i2='hxx;
+
+    $display("------Wildcard equality------");
+    $display("i1=%0b i2=%0b :i1 ==? i2 =boolean %0b",i1,i2,i1==?i2);
+    $display("i1=%0b i2=%0b :i1 !=? i2 =boolean %0b",i1,i2,i1!=?i2);
+    
+    
   end
 endmodule
