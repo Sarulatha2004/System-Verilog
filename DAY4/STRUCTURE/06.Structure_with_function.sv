@@ -24,7 +24,7 @@ module struct_example;
   initial begin
     employee emp1, emp2;
     emp1 = create_struct("SARU",'h10000, 'd1234);
-    emp2 = create_struct("DIVYA",'h12000, 'd4321);
+    emp2 = create_struct("DD",'h12000, 'd4321);
     print_struct(emp1);
     print_struct(emp2);
   end
