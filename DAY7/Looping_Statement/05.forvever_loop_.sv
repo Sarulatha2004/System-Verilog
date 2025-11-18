@@ -14,3 +14,16 @@ module forever_exmaple;
     $finish;
   end
 endmodule
+
+
+module forever_example;
+  int cnt;
+  initial begin
+    forever begin
+      $display("Value of count = %0d",cnt);
+      cnt++;
+      if(cnt == 10)
+        break;
+    end
+  end
+endmodule
