@@ -23,11 +23,8 @@ module tb;
     ones = new();
 
     repeat(15) begin
-      if (!ones.randomize())
-        $display("Randomization failed!");
-      else begin
+      if (ones.randomize())
         ones.display();
-      end
     end
 
     $finish;
