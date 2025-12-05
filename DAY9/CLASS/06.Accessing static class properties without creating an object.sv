@@ -17,13 +17,17 @@ module class_module;
   int i;
   packet pkt[3];
   packet p;
+  packet q;
+  packet r;
   
   initial begin
     foreach(pkt[i]) begin  
       pkt[i]=new();
     end
     p.display();
+    q.display();
+    r.display();
+    pkt[i].display();
     
   end
 endmodule
-    
