@@ -4,7 +4,7 @@ class packet;
   bit write;
   string pkt_type;
   
-  function new(bit [31:0]addr,data,bit write,string pkt_type);
+  function func(bit [31:0]addr,data,bit write,string pkt_type);
     this.addr=addr;
     this.data=data;
     this.write=write;
@@ -25,7 +25,8 @@ endclass
   module packet_example;
     packet pkt;
     initial begin
-      pkt=new(32'h10,32'h45,1,"Good_pkt");
+      pkt=new();
+      pkt.func(32'h10,32'h45,1,"Good_pkt");
       pkt.display();
     end
   endmodule
