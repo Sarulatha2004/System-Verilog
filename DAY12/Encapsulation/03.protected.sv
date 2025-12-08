@@ -2,7 +2,7 @@ class parent_class;
   protected int tmp_addr;
   
   function new(int r_addr);
-    tmp_addr=r_add+10;
+    tmp_addr=r_addr+10;
   endfunction
   
   function void display();
@@ -23,9 +23,11 @@ class child_class extends parent_class;
 endclass
 
 module encapsulation;
+  parent_class p_c;
+  child_class c_c;
   initial begin
-  parent_class p_c=new(5);
-  child_class c_c=new(10);
+   p_c=new(5);
+   c_c=new(10);
   
   p_c.tmp_addr=10;
   p_c.display();
@@ -35,3 +37,10 @@ module encapsulation;
   
   end
 endmodule
+  
+  
+
+
+
+
+//ERROR VCP5248 "Cannot access local/protected member ""p_c.tmp_addr"" from this scope." "testbench.sv" 30  15
