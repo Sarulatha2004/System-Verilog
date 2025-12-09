@@ -9,14 +9,14 @@ class packet #(parameter int ADDR_WIDTH=32,DATA_WIDTH=32);
   
   function void display();
     $display("--------------------");
-    $display("Address=%0d",addr);
-    $display("Data=%0d",data);
+    $display("Address=%b",addr);
+    $display("Data=%b",data);
     $display("--------------------");
   endfunction
 endclass
   
   module parameter_class;
-    packet pkt;
+    packet #(10,10)pkt;
     initial begin
       pkt=new();
       pkt.display();
