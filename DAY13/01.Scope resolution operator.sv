@@ -11,6 +11,7 @@ endclass
 module scope;
   int id=10;
   initial begin
+    //packet::addr; illegal to access non_static property
     packet ::id=20;
     packet::display(packet::id,id);
   end
