@@ -1,0 +1,24 @@
+module fork_join_any;
+  initial begin
+    $display("---------------------------");
+   fork 
+     begin
+     $display($time,"\tProcess-1 Started");
+    #5;
+    $display($time,"\t Process-1 Finished");
+     end
+     
+     begin
+       $display($time,"\tProcess-2 Started");
+    #20;
+       $display($time,"\t Process-2 Finished");
+     end
+     
+   join_any
+    #5;
+    $display($time,"\tOutside Fork-Join");
+    #25;
+    $display($time,"-------------------------");
+  end
+endmodule
+ 
