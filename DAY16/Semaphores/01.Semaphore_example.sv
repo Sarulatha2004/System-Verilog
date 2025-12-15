@@ -5,6 +5,7 @@ initial begin
   sem.get(4);
   $display("Thread 1:Accessing 4 keys from semaphore At time=[%0t]",$time);
   
+  
   #5;
   sem.put(4);
   $display("Thresd 1: Done using 4 keys At time=[%0t]",$time);
