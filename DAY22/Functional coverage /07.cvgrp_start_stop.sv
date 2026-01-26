@@ -31,6 +31,10 @@ module cvgrp_start_stop;
         c.stop(); 
         $display("If coverage%% is greater than 65%%, stop executing covergroup");
       end
+        else begin
+          c.start();
+          $display("If coverage%% is lesser than 65%%, start executing covergroup");
+        end
 
      
     end
@@ -40,10 +44,15 @@ endmodule
 
 
 
-///////////////////OUTPUT///////////////////////////////////
 
+
+
+
+///////////////////OUTPUT///////////////////////////////////
 # KERNEL: a=0 ; b=1 ; coverage = 31.25
+# KERNEL: If coverage% is lesser than 65%, start executing covergroup
 # KERNEL: a=5 ; b=0 ; coverage = 62.50
+# KERNEL: If coverage% is lesser than 65%, start executing covergroup
 # KERNEL: a=3 ; b=0 ; coverage = 68.75
 # KERNEL: If coverage% is greater than 65%, stop executing covergroup
 # KERNEL: a=6 ; b=1 ; coverage = 68.75
