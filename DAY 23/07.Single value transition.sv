@@ -5,7 +5,8 @@ module single_val_trans_bin;
   covergroup cvgrp;
     c1: coverpoint a{
       bins tran1=(1 =>2);
-      bins tran2=(3 =>4);
+      bins tran2=(2 =>3);
+      bins tran3=(3 =>4);
     }
   endgroup
   
@@ -22,15 +23,15 @@ module single_val_trans_bin;
       end
   end
 endmodule
-
+  
 
 
 
 ///////////////////OUTPUT//////////////////////////////
 
 # KERNEL: val= 1 ; coverage=0.00 %
-# KERNEL: val= 2 ; coverage=50.00 %
-# KERNEL: val= 3 ; coverage=50.00 %
+# KERNEL: val= 2 ; coverage=33.33 %
+# KERNEL: val= 3 ; coverage=66.67 %
 # KERNEL: val= 4 ; coverage=100.00 %
 
 ///////////////////////////////////////////////////////////
