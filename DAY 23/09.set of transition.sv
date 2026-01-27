@@ -1,0 +1,38 @@
+module set_trans_bins;
+  
+  bit [3:0]a;
+  bit [2:0]values[$] = '{1,2,3,4,5};
+  
+   covergroup cvgrp;
+    c1 : coverpoint a {
+      bins tran1 = (1,2 => 3,4);
+      bins tran2 = (3,4 => 5);
+      bins tran3 = (1,3 => 4);
+    }
+  endgroup
+
+  cvgrp cg = new();
+
+  initial
+  begin
+    foreach(values[i])
+    begin
+      a = values[i];
+      cg.sample();
+      $display("val = %d, coverage = %.2f %%", a, cg.get_inst_coverage());
+    end
+  end
+endmodule
+
+///////////////////////OUTPUT///////////////////////////
+
+# KERNEL: val =  1, coverage = 0.00 %
+# KERNEL: val =  2, coverage = 0.00 %
+# KERNEL: val =  3, coverage = 33.33 %
+# KERNEL: val =  4, coverage = 66.67 %
+# KERNEL: val =  5, coverage = 100.00 %
+
+///////////////////////////////////////////////////////
+
+
+
