@@ -1,0 +1,97 @@
+
+-----Generator-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Driver-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Monitor-----
+clk=0  |  rst=1 | en=1| count=0 
+-----Scoreboard-----
+clk=0  |  rst=1 | en=1| count=0 
+PASS -> rst=1 en=1 | DUT_count=0 EXP_count=0
+-----Generator-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Driver-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Monitor-----
+clk=0  |  rst=1 | en=0| count=0 
+-----Scoreboard-----
+clk=0  |  rst=1 | en=0| count=0 
+PASS -> rst=1 en=0 | DUT_count=0 EXP_count=0
+-----Generator-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Driver-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Generator-----
+clk=0  |  rst=0 | en=1| count=0 
+PASS -> rst=0 en=1 | DUT_count=0 EXP_count=0
+-----Driver-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=0| count=1 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=0| count=1 
+PASS -> rst=0 en=0 | DUT_count=1 EXP_count=1
+-----Driver-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=0| count=1 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=0| count=1 
+PASS -> rst=0 en=0 | DUT_count=1 EXP_count=1
+-----Driver-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=1| count=1 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=1| count=1 
+PASS -> rst=0 en=1 | DUT_count=1 EXP_count=1
+-----Driver-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=1| count=2 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=1| count=2 
+PASS -> rst=0 en=1 | DUT_count=2 EXP_count=2
+-----Driver-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=0| count=3 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=0| count=3 
+PASS -> rst=0 en=0 | DUT_count=3 EXP_count=3
+-----Driver-----
+clk=0  |  rst=0 | en=0| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=1| count=3 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=1| count=3 
+PASS -> rst=0 en=1 | DUT_count=3 EXP_count=3
+-----Driver-----
+clk=0  |  rst=0 | en=1| count=0 
+-----Monitor-----
+clk=0  |  rst=0 | en=1| count=4 
+-----Scoreboard-----
+clk=0  |  rst=0 | en=1| count=4 
+PASS -> rst=0 en=1 | DUT_count=4 EXP_count=4
+$finish at simulation time                   97
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 97 ns
+CPU Time:      0.490 seconds;       Data structure size:   0.0Mb
+Tue Feb  3 02:59:30 2026
+Done
