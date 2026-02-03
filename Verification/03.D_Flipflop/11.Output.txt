@@ -1,0 +1,54 @@
+-----Generator-----
+clk=0  |  rst=0 | d=1| q=0 
+-----Generator-----
+clk=0  |  rst=1 | d=0| q=0 
+-----Driver-----
+clk=0  |  rst=0 | d=1| q=0 
+-----Generator-----
+clk=0  |  rst=0 | d=0| q=0 
+-----Monitor-----
+clk=0  |  rst=1 | d=0| q=0 
+-----Scoreboard-----
+clk=0  |  rst=1 | d=0| q=0 
+PASS -> rst=1 d=0 | DUT_q=0 EXP_q=0
+-----Generator-----
+clk=0  |  rst=1 | d=0| q=0 
+-----Generator-----
+clk=0  |  rst=0 | d=1| q=0 
+-----Driver-----
+clk=0  |  rst=1 | d=0| q=0 
+-----Monitor-----
+clk=0  |  rst=0 | d=0| q=0 
+-----Scoreboard-----
+clk=0  |  rst=0 | d=0| q=0 
+PASS -> rst=0 d=0 | DUT_q=0 EXP_q=0
+-----Driver-----
+clk=0  |  rst=0 | d=0| q=0 
+-----Monitor-----
+clk=0  |  rst=1 | d=0| q=0 
+-----Scoreboard-----
+clk=0  |  rst=1 | d=0| q=0 
+PASS -> rst=1 d=0 | DUT_q=0 EXP_q=0
+-----Driver-----
+clk=0  |  rst=1 | d=0| q=0 
+-----Monitor-----
+clk=0  |  rst=0 | d=1| q=0 
+-----Scoreboard-----
+clk=0  |  rst=0 | d=1| q=0 
+PASS -> rst=0 d=1 | DUT_q=0 EXP_q=0
+-----Driver-----
+clk=0  |  rst=0 | d=1| q=0 
+-----Monitor-----
+clk=0  |  rst=0 | d=1| q=1 
+-----Scoreboard-----
+clk=0  |  rst=0 | d=1| q=1 
+PASS -> rst=0 d=1 | DUT_q=1 EXP_q=1
+$finish at simulation time                   46
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 46 ns
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Tue Feb  3 01:15:40 2026
+Finding VCD file...
+./DFF.vcd
+[2026-02-03 06:15:40 UTC] Opening EPWave...
+Done
