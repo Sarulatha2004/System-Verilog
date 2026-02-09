@@ -1,19 +1,29 @@
-class generator;
+class driver;
+  
+  virtual fifo_inf inf;
   transaction trans;
   mailbox gentodri;
   
-  function new (mailbox gentodri);
+  function new(virtual fifo_inf inf,mailbox gentodri);
+    this.inf=inf;
     this.gentodri=gentodri;
   endfunction
   
   task main();
     
     repeat(50) begin
-      trans=new();
+      gentodri.get(trans);
+      @(negedge inf.clk);
+      inf.wr_en <= trans.wr_en;
+      inf.rd_en <= trans.rd_en;
+      inf.data_in <= trans.data_in;
       
-      assert(trans.randomize());
-      gentodri.put(trans);
-      #3;
+      @(posedge inf.clk);
+      #10;
+      
+      inf.wr_en <=0;
+      inf.rd_en<=0;
+    
     end
   endtask
 endclass
