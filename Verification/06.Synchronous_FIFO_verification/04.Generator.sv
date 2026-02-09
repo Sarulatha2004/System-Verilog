@@ -1,12 +1,20 @@
-class transaction#(parameter DATA_WIDTH=8);
+class generator;
+  transaction trans;
+  mailbox gentodri;
   
-  bit clk;
-  bit rstn;
-  rand bit wr_en;
-  rand bit rd_en;
-  rand bit [DATA_WIDTH-1:0]data_in;
-  bit [DATA_WIDTH-1:0]data_out;
-  bit full,empty;
+  function new (mailbox gentodri);
+    this.gentodri=gentodri;
+  endfunction
   
-  constraint cons{ wr_en ^ rd_en; }
+  task main();
+    
+    repeat(50) begin
+      trans=new();
+      
+      assert(trans.randomize());
+    
+      gentodri.put(trans);
+      #3;
+    end
+  endtask
 endclass
