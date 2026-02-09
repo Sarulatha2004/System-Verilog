@@ -1,0 +1,30 @@
+Reset active-Ignored
+Reset active-Ignored
+Write occur-----> input=40
+Reset active-Ignored
+Reset active-Ignored
+Test case PASS ----> Read data: Actual Output=0  Expected Output=0
+Reset active-Ignored
+Test case PASS ----> Read data: Actual Output=0  Expected Output=0
+Write occur-----> input=17
+Test case PASS ----> Read data: Actual Output=17  Expected Output=17
+Test case PASS ----> Read data: Actual Output=17  Expected Output=17
+Write occur-----> input=71
+Write occur-----> input=25
+Test case PASS ----> Read data: Actual Output=71  Expected Output=71
+Test case PASS ----> Read data: Actual Output=25  Expected Output=25
+Test case PASS ----> Read data: Actual Output=25  Expected Output=25
+Test case PASS ----> Read data: Actual Output=25  Expected Output=25
+Test case PASS ----> Read data: Actual Output=25  Expected Output=25
+Write occur-----> input=238
+Test case PASS ----> Read data: Actual Output=238  Expected Output=238
+Test case PASS ----> Read data: Actual Output=238  Expected Output=238
+Test case PASS ----> Read data: Actual Output=238  Expected Output=238
+Write occur-----> input=80
+Test case PASS ----> Read data: Actual Output=80  Expected Output=80
+Write occur-----> input=136
+Test case PASS ----> Read data: Actual Output=136  Expected Output=136
+Test case PASS ----> Read data: Actual Output=136  Expected Output=136
+Test case PASS ----> Read data: Actual Output=136  Expected Output=136
+Test case PASS ----> Read data: Actual Output=136  Expected Output=136
+Test case PASS ----> Read data: Actual Output=136  Expected Output=136
