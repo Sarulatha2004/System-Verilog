@@ -27,6 +27,9 @@ module sync_fifo#(parameter DEPTH=8,DATA_WIDTH=8)
       data_out <= fifo[r_ptr];
       r_ptr <= r_ptr + 1;
     end
+
+      if(empty)
+        data_out<=0;
   end
   end
   
