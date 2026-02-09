@@ -37,6 +37,9 @@ class scoreboard#(parameter DATA_WIDTH=8);
       if(trans.wr_en)begin
         $display("Write occur-----> input=%0d",trans.data_in);
       end
+
+       if(trans.empty)
+        exp_data_out=0;
       
       if(trans.rd_en)begin
         if(trans.data_out == exp_data_out)
